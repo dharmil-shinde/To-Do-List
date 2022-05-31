@@ -1,0 +1,250 @@
+.todo-container{
+    /* background:red; */
+    height: 100vh;
+    width: auto;
+}
+.todo-icon-name{
+    text-align: center;
+    padding-top:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: 4px underline;
+    font-size: 1.5rem;
+    color:white;
+}
+.todo-icon{
+     font-size: 4.5rem;
+    color:white;
+} 
+.todo-inp-btn{
+    display:flex;
+    margin-top: 4em;
+    margin-bottom:2em;
+    justify-content: center;
+    align-content:center;
+    /* background-color: blue; */
+    height: 8em;
+    align-items: center;
+    transition: all 200ms;
+    
+}
+.todo-inp-btn input{
+    color: #68f3c5cb;
+    width:50%;
+    height:3rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border: none;
+    padding: 10px 8px;
+    outline-color: #40b58e;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.686);
+
+}
+.todo-inp-btn button{
+    height:3rem;
+    width: 100px;
+    color: white;
+    background-color: #40b58e;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 454ms;
+}
+.todo-inp-btn button:hover{
+    background-color: #4dd5a7;
+    color: black
+}
+.todo-list{
+    background-color: rgb(64, 68, 68);
+    min-width: 0%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top:0.5rem;
+    height:calc(100vh+30rem);
+    border-radius: 2rem;
+    /* overflow: hidden; */
+    transition: all 654ms;
+}
+.todo-list:hover{
+    box-shadow: 0px 5px 1rem 0.2rem rgb(255, 255, 255, 0.20);
+    padding: 1rem 1rem;
+    border: 2px solid #40b58e;
+    transition: all 345ms;
+}
+.todo-bookmark{
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 17rem;
+    height: 20rem;
+    margin: 1rem 0rem;
+    position: relative;
+    /* margin-left: 1rem; */
+    border: 1px solid #40b58e;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 434ms;
+    cursor: pointer;
+    box-shadow: 0px 5px 1rem 0.3rem #42b58e3d;
+    
+}
+.todo-bookmark2{
+    background-color: rgba(0, 0, 0, 0.823);
+    width: 100%;
+    height: 30rem;
+    margin: 1rem 0rem;
+    position:relative;
+    /* margin-left: 1rem; */
+    border-radius: 10px;
+    padding: 5px;
+    transition: 434ms;
+    cursor: pointer;
+    border: 1px solid red;
+    box-shadow: 0px 5px 1rem 0.3rem rgba(248, 5, 5, 0.2);
+    
+}
+.todo-bookmark:hover{
+    background-color: rgba(0, 0, 0, 0.482);
+    transform: translatey(-12px) ;
+    border: 1px solid red;
+    box-shadow: 0px 5px 1rem 0.2rem rgba(248, 5, 5, 0.2);
+
+    
+}
+
+.bookmarked-p{
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    /* background-color: rgb(31, 125, 208); */
+    /* text-align: center; */
+    color: #f1f1f1;
+    text-indent: 1.7rem;    
+    word-break:keep-all; 
+    overflow: hidden;
+    height:  100%;
+    transition: all 656ms;
+
+
+}
+.todo-icon-bookmark{
+    color:#40b58e;
+    position:absolute;
+    top:-14px;
+    left:-5px
+    
+}
+
+.todo-icon-delete{
+    color:#40b58e;
+    transition: 434ms;
+    position: absolute;
+    right:5px;
+    bottom:5px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    padding: 2px;
+}
+.todo-icon-delete:hover{
+    color: red;
+    font-size: 3.2rem;
+    transition: all 0.2s;
+
+}
+.todo-close-icon{
+    background-color:black;
+    right:0px;
+    top:0px;
+    color:#40b58e;
+    padding: 2.3px;
+    border-radius:50%;
+    transition: all 1s;
+    visibility: visibible;
+    /* margin:0 auto; */
+    
+}
+.fullscreen{
+    background-color:black;
+    right:0px;
+    color:#40b58e;
+    top:0px;
+    padding: 2.3px;
+    border-radius:50%;
+    transition: all 1s;
+    visibility: visibible;
+    /* margin:0 auto; */
+}
+.fullscreen-exit{
+    background-color:black;
+    color:#40b58e;
+    right:0px;
+    top:0px;
+    padding: 2.3px;
+    border-radius:50%;
+    transition: all 1s;
+    visibility: visibible;
+    /* margin:0 auto; */
+    margin: 0 5px
+}
+.icons-div{
+    /* background-color: #4dd5a7; */
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-bottom:1.5rem;
+    visibility: visible
+}
+.todo-close-icon:hover{
+    transition: all 454ms;
+    color:red;
+    box-shadow: 0px 0px 1rem 0.2rem#f30a0a3d;
+
+}
+.fullscreen:hover{
+    color:#ffcc01;
+    font-weight: 700;
+    box-shadow: 0px 0px 1rem 0.2rem#f0c30e3f;
+    transition: all 454ms;
+}
+.fullscreen-exit:hover{
+    color:rgb(9, 247, 203);
+    transition: all 454ms;
+    font-weight: 700;
+    box-shadow: 0px 0px 1rem 0.2rem rgba(9, 247, 203, 0.186);
+
+}
+
+.todo-icon-edit{
+    color:#40b58e;
+    transition: 434ms;
+    position: absolute;
+    right:4rem;
+    bottom:5px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    padding: 4px;
+}
+.todo-icon-edit:hover{
+    color:rgb(89, 213, 89);
+    transition: all 0.2s;
+}
+.no-notes{
+    font-size: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgba(255, 255, 255, 0.313);
+    text-shadow: 0px 0px 4px #40b58e9f;
+    text-align: center;
+
+    text-transform: capitalize;
+    cursor:context-menu;
+    
+}
